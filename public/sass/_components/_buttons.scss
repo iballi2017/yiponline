@@ -1,0 +1,26 @@
+@use "../_partials/mixins";
+.call-to-action {
+    display: inline-block;
+    border-radius: 100vmax;
+    padding: 0.4em 1.5em;
+    background-color: var(--clr-primary-300);
+    &::after {
+        margin-left: 0.8em;
+        display: inline-flex;
+        align-items: center;
+
+        @include mixins.after("\f105", null);
+    }
+    &:hover {
+        background-color: var(--clr-primary);
+    }
+
+    @include mixins.transition(all 320ms ease-in-out);
+}
+
+.primary-btn {
+    background-color: var(--clr-primary-300);
+    &:hover {
+        background-color: var(--clr-primary);
+    }
+}

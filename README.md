@@ -19,3 +19,12 @@ Explain the reasoning behind your chosen interactive elements and how they contr
 
 ####Note:
   Feel free to incorporate creative elements or interactive features to showcase your skills, but ensure that the fundamental requirements are met. This case study aims to assess your HTML and CSS proficiency in redesigning a website for YipOnline.
+
+
+  # PROBLEMS
+
+  ## 1. Inconsistent font family for body texts
+  ### Solution
+    Body text: Roboto
+    Title text: Poppins
+  

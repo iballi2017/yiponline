@@ -1,0 +1,40 @@
+@use "../_partials/mixins";
+.footer {
+    font-size: 0.95rem;
+    background-color: var(--clr-primary-600);
+    color: var(--clr-bright);
+
+    .brand-logo {
+        max-width: 100px;
+    }
+    .column-title {
+        line-height: 40px;
+    }
+
+    li {
+        a {
+            color: var(--clr-light);
+            @include mixins.transition(all 320ms ease-in-out);
+            &:hover {
+                color: var(--clr-bright);
+            }
+        }
+    }
+
+    .social-icons {
+        .fa-icon {
+            font-size: 1.2rem;
+        }
+    }
+
+    @include mixins.minmq(50em) {
+        .column-title {
+            line-height: 70px;
+        }
+        .social-icons {
+            .fa-icon {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

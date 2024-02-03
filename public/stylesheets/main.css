@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+/* Fontawesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css");
+:root {
+  /* COLORS */
+  --clr-primary-250: rgba(0, 83, 206, .7);
+  --clr-primary-300: rgba(0, 83, 206, .8);
+  --clr-primary: rgb(0, 83, 206);
+  --clr-primary-600: rgb(0, 59, 147);
+  --clr-secondary: rgb(181, 215, 92);
+  --clr-text: #444;
+  --clr-bright: #ffffff;
+  --clr-light: #ffffff7e;
+}
+
+:root {
+  /* SIZES */
+  --size-50: 1.88em;
+  --size-100: 2.63em;
+  --size-250: 3.81em;
+  --size-300: 4.88em;
+  --size-500: 6.25em;
+}
+
+:root {
+  /* FONT WEIGHT */
+  --fw-lighter: 100;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 600;
+  --fw-bolder: 700;
+  /* FONT FAMILY */
+  --ff-headline: "Poppins", sans-serif;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-body: var(--ff-primary);
+  /* LINE HEIGHT*/
+  --lh-100: 40px;
+  --lh-150: 50px;
+  --lh-200: 60px;
+  --lh-section-title: 65px;
+  /* FONT SIZES */
+  --fs-nav: 0.93rem;
+}
+
+.main-navigation {
+  background-color: var(--clr-bright);
+}
+.main-navigation .brand-logo {
+  max-width: 100px;
+}
+.main-navigation .nav-link {
+  color: var(--clr-primary-600);
+}
+
+/* minimum media query */
+/* maximum media query */
+/* maximum and minimum query */
+/* tranform effects */
+/* transition effects */
+/* form control appearance */
+/* 'before' pseudo element style */
+/* 'after' pseudo element style */
+.call-to-action {
+  display: inline-block;
+  border-radius: 100vmax;
+  padding: 0.4em 1.5em;
+  background-color: var(--clr-primary-300);
+  transition: all 320ms ease-in-out;
+  -webkit-transition: all 320ms ease-in-out;
+  -ms-transition: all 320ms ease-in-out;
+  transition: all 320ms ease-in-out;
+}
+.call-to-action::after {
+  margin-left: 0.8em;
+  display: inline-flex;
+  align-items: center;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.call-to-action:hover {
+  background-color: var(--clr-primary);
+}
+
+.primary-btn {
+  background-color: var(--clr-primary-300);
+}
+.primary-btn:hover {
+  background-color: var(--clr-primary);
+}
+
+.hero {
+  min-height: 600px;
+}
+.footer {
+  font-size: 0.95rem;
+  background-color: var(--clr-primary-600);
+  color: var(--clr-bright);
+}
+.footer .brand-logo {
+  max-width: 100px;
+}
+.footer .column-title {
+  line-height: 40px;
+}
+.footer li a {
+  color: var(--clr-light);
+  transition: all 320ms ease-in-out;
+  -webkit-transition: all 320ms ease-in-out;
+  -ms-transition: all 320ms ease-in-out;
+  transition: all 320ms ease-in-out;
+}
+.footer li a:hover {
+  color: var(--clr-bright);
+}
+.footer .social-icons .fa-icon {
+  font-size: 1.2rem;
+}
+@media (min-width: 50em) {
+  .footer .column-title {
+    line-height: 70px;
+  }
+  .footer .social-icons .fa-icon {
+    font-size: 1.5rem;
+  }
+}
+
+/* BACKGROUND COLORS */
+.bg-primary {
+  background-color: var(--clr-primary);
+}
+
+.bg-primary-250 {
+  background-color: var(--clr-primary-250);
+}
+
+.bg-secondary {
+  background-color: var(--clr-secondary);
+}
+
+/* TEXT COLORS */
+.text-primary {
+  color: var(--clr-primary);
+}
+
+.text-primary-600 {
+  color: var(--clr-primary-600);
+}
+
+.text-secondary {
+  color: var(--clr-secondary);
+}
+
+/* FONT SIZES */
+.fs-nav {
+  font-size: var(--fs-nav);
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+/* FONT FAMILY */
+.ff-headline {
+  font-family: var(--ff-headline);
+}
+
+a.text-link {
+  color: var(--clr-primary-300);
+  transition: all 320ms ease-in-out;
+  -webkit-transition: all 320ms ease-in-out;
+  -ms-transition: all 320ms ease-in-out;
+  transition: all 320ms ease-in-out;
+}
+a.text-link:hover {
+  color: var(--clr-primary-600);
+}
+a.text-link.link-icon::after {
+  margin-left: 0.8em;
+  display: inline-flex;
+  align-items: flex-end;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* Animation Classes*/
+.fade-in {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left,
+.from-right,
+.from-bottom {
+  transition: transform 1000ms ease-in-out;
+  position: absolute;
+  opacity: 0;
+}
+.from-left.appear,
+.from-right.appear,
+.from-bottom.appear {
+  position: relative;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-5em);
+}
+
+.from-right {
+  transform: translateX(5em);
+}
+
+.from-top {
+  transform: translateY(-50%);
+}
+
+.from-bottom {
+  transform: translateY(50%);
+}
+
+/*# sourceMappingURL=main.css.map */

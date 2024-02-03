@@ -1,0 +1,26 @@
+:root {
+    /* FONT WEIGHT */
+    --fw-lighter: 100;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 600;
+    --fw-bolder: 700;
+
+    /* FONT FAMILY */
+    --ff-headline: "Poppins", sans-serif;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-body: var(--ff-primary);
+
+    /* LINE HEIGHT*/
+    --lh-100: 40px;
+    --lh-150: 50px;
+    --lh-200: 60px;
+    --lh-section-title: 65px;
+
+    /* FONT SIZES */
+    --fs-nav: 0.93rem; //14px;
+    // --fs-headline-500: ;
+    // --fs-nav: ;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
