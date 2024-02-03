@@ -8,6 +8,7 @@
     "sass": "sass ./public/sass/main.scss ./public/stylesheets/main.css --watch"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",

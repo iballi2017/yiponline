@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET Home page. */
 router.get('/', function (req, res, next) {
   res.render('home', {
     html: {
@@ -55,9 +55,34 @@ router.get('/', function (req, res, next) {
   });
 });
 
-/* GET home page. */
+/* GET Contact-us page. */
 router.get('/contact-us', function (req, res, next) {
-  res.render('contact-us', { title: 'Contact Us' });
+  res.render('contact-us',
+    {
+      html: {
+        title: "YPOnline | Contact Us"
+      },
+    });
+});
+
+/* GET Careers page. */
+router.get('/careers', function (req, res, next) {
+  res.render('careers',
+    {
+      html: {
+        title: "YPOnline | Contact Us"
+      },
+    });
+});
+
+/* GET Products page. */
+router.get('/products', function (req, res, next) {
+  res.render('products',
+    {
+      html: {
+        title: "YPOnline | Contact Us"
+      },
+    });
 });
 
 module.exports = router;
