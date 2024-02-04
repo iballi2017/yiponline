@@ -12,18 +12,24 @@ npm install
 
 ## Usage
 
-```javascript
+- start server 
 
+```bash
+npm run start
+```
 
-# start server 'npm run start'
+- compile & watch tailwindcss
+```bash
+npm run tailwind
+```
 
-# compile & watch tailwindcss 'npm run tailwind'
-
-# compile & watch scss 'npm run sass'
-
+- compile & watch scss
+```bash
+npm run sass
+```
 
 #visit `http://localhost:3000/home`
-```
+
 
 ## Interactive Elements
 
