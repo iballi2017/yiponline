@@ -2,7 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 /* GET Home page. */
-router.get('/', function (req, res, next) {
+router.get('/', (req, res, next) => {
+  res.redirect("home")
+})
+router.get('/home', function (req, res, next) {
   res.render('home', {
     html: {
       title: "YPOnline | E-commerce | Hospitality | Search Functionality | Custom Domain | Responsive Themes"
@@ -84,5 +87,16 @@ router.get('/products', function (req, res, next) {
       },
     });
 });
+
+/* GET Page-not-found page. */
+router.get('**', (req, res, next) => {
+  res.render("page-not-found",
+  {
+    html: {
+      title: "YPOnline | 404: The Page You Are Looking For Is Not Found"
+    },
+  })
+})
+
 
 module.exports = router;

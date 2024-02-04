@@ -232,4 +232,12 @@ a.text-link.link-icon::after {
   transform: translateY(50%);
 }
 
+/* Backgrounds */
+.jigsaw-bg {
+  background-image: url(../images/jigsaw-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /*# sourceMappingURL=main.css.map */
